@@ -1,7 +1,6 @@
 WPFOnScreenKeyboard
 ===================
 
-Wpf control
+Wpf OnScreen Keyboard control
 
 
-123 test
