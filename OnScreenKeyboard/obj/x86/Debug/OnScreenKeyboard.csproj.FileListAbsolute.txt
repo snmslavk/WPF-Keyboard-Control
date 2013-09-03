@@ -1,0 +1,31 @@
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\bin\Debug\OnScreenKeyboard.exe
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\bin\Debug\OnScreenKeyboard.pdb
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\bin\Debug\TermControls.dll
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\bin\Debug\TermControls.pdb
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.csprojResolveAssemblyReference.cache
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\MainWindow.baml
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\MainWindow.g.cs
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\App.g.cs
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard_MarkupCompile.cache
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.g.resources
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.Properties.Resources.resources
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.csproj.GenerateResource.Cache
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.exe
+c:\users\днс\documents\visual studio 2010\Projects\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.pdb
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.exe
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.pdb
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\bin\Debug\OnScreenKeyboard.exe
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\bin\Debug\OnScreenKeyboard.pdb
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\bin\Debug\TermControls.dll
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\bin\Debug\TermControls.pdb
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard_MarkupCompile.cache
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.g.resources
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.Properties.Resources.resources
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\днс\Downloads\OnScreenKeyboard(Вроде доделал)\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.exe
+C:\Users\днс\Downloads\OnScreenKeyboard(Вроде доделал)\OnScreenKeyboard\OnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.pdb
