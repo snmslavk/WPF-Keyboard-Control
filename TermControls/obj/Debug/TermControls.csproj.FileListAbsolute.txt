@@ -42,3 +42,15 @@ C:\Documents and Settings\Администратор\Мои документы\D
 C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\TermControls\obj\Debug\GenerateResource.write.1.tlog
 C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\TermControls\obj\Debug\TermControls.dll
 C:\Documents and Settings\Администратор\Мои документы\Downloads\OnScreenKeyboard\OnScreenKeyboard\TermControls\obj\Debug\TermControls.pdb
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\TermControls\bin\Debug\TermControls.dll
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\TermControls\bin\Debug\TermControls.pdb
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\TermControls\obj\Debug\OnScreenKeyboard.g.cs
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\TermControls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\TermControls\obj\Debug\TermControls_MarkupCompile.cache
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\TermControls\obj\Debug\TermControls_MarkupCompile.lref
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\TermControls\obj\Debug\OnScreenKeyboard.baml
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\TermControls\obj\Debug\TermControls.g.resources
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\TermControls\obj\Debug\TermControls.Properties.Resources.resources
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\TermControls\obj\Debug\TermControls.csproj.GenerateResource.Cache
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\TermControls\obj\Debug\TermControls.dll
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\TermControls\obj\Debug\TermControls.pdb

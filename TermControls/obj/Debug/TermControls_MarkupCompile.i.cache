@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\днс\Downloads\OnScreenKeyboard(Вроде доделал)\OnScreenKeyboard\OnScreenKeyboard\TermControls\obj\Debug\
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\TermControls\obj\Debug\
 TermControls
 none
 false
@@ -16,5 +16,5 @@ DEBUG;TRACE
 12-1381780322
 OnScreenKeyboard.xaml;
 
-True
+False
 
