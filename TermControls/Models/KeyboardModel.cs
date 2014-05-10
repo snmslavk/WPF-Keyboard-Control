@@ -32,15 +32,6 @@ namespace TermControls.Models
             }
         }
 
-        string GetButtonContent(string btnName)
-        {
-            int raw = Convert.ToInt32(btnName[1].ToString()) - 1;
-            int col = btnName.Length == 3 ? Convert.ToInt32(btnName[2].ToString()) - 1 : Convert.ToInt32(btnName[2].ToString() + btnName[3].ToString()) - 1;
-            return Content[raw][col].ToString();
-        }
-
-
-
         private ObservableCollection<ButtonModel> buttonsRaw1;
 
         public ObservableCollection<ButtonModel> ButtonsRaw1
@@ -81,21 +72,25 @@ namespace TermControls.Models
             }
         }
 
-        ObservableCollection<ButtonModel> CreateButtons(int _raw)
+
+        private string text;
+        public string Text
         {
-            var _buttons = new ObservableCollection<ButtonModel>();
-            for (int j = 1; j <= Content[_raw].Length; j++)
+            get { return text; }
+            set
             {
-                string _name = String.Format("b{0}{1}", _raw + 1, j);
-                _buttons.Add(new ButtonModel() { Name = _name, Column = j - 1, Content = GetButtonContent(_name) });
+                text = value;
+                OnPropertyChanged("Text");
             }
-            return _buttons;
         }
 
-        void ChangeButtonsContent(ObservableCollection<ButtonModel> _buttons, int _raw)
+        #region Methods
+
+        public string GetButtonContent(string btnName)
         {
-            for (int j = 1; j <= Content[_raw].Length; j++)
-                _buttons[j-1].Content = GetButtonContent(_buttons[j-1].Name);
+            int raw = Convert.ToInt32(btnName[1].ToString()) - 1;
+            int col = btnName.Length == 3 ? Convert.ToInt32(btnName[2].ToString()) - 1 : Convert.ToInt32(btnName[2].ToString() + btnName[3].ToString()) - 1;
+            return Content[raw][col].ToString();
         }
 
         public void ChangeButtonsContent()
@@ -118,18 +113,31 @@ namespace TermControls.Models
         {
             isShift = false;
             isEngRus = false;
+            InitContent();
         }
 
-        private string text;
-        public string Text
+        public virtual void InitContent()
         {
-            get { return text; }
-            set
-            {
-                text = value;
-                OnPropertyChanged("Text");
-            }
         }
+
+        ObservableCollection<ButtonModel> CreateButtons(int _raw)
+        {
+            var _buttons = new ObservableCollection<ButtonModel>();
+            for (int j = 1; j <= Content[_raw].Length; j++)
+            {
+                string _name = String.Format("b{0}{1}", _raw + 1, j);
+                _buttons.Add(new ButtonModel() { Name = _name, Column = j - 1, Content = GetButtonContent(_name) });
+            }
+            return _buttons;
+        }
+
+        void ChangeButtonsContent(ObservableCollection<ButtonModel> _buttons, int _raw)
+        {
+            for (int j = 1; j <= Content[_raw].Length; j++)
+                _buttons[j - 1].Content = GetButtonContent(_buttons[j - 1].Name);
+        }
+
+        #endregion
 
         #region INotifyPropertyChanged Members
 

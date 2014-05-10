@@ -9,6 +9,11 @@ namespace TermControls.Models
         public KeyboardModelRuEng()
             : base()
         {
+            
+        }
+
+        public override void InitContent()
+        {
             Content1 = new string[4] { "1234567890-", "йцукенгшщзхъ", "фывапролджэ", "ячсмитьбю,.?" };
             Content1Shift = new string[4] { "!\"№;%:?*()-", "ЙЦУКЕНГШЩЗХЪ", "ФЫВАПРОЛДЖЭ", "ЯЧСМИТЬБЮ,.?" };
             Content2 = new string[4] { "1234567890-", "qwertyuiop[]", "asdfghjkl;'", "zxcvbnm<>,.?" };
