@@ -1,9 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnScreenKeyboard", "OnScreenKeyboard\OnScreenKeyboard.csproj", "{4A57F6F1-BCBC-446D-98B9-F98CC6455C2B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TermControls", "TermControls\TermControls.csproj", "{4D17507C-6002-49C6-976C-649588A2677F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TermControlsTests", "TermControlsTests\TermControlsTests.csproj", "{C92ECA3F-1083-4509-B4B7-ED9B3C5B5F3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,16 @@ Global
 		{4D17507C-6002-49C6-976C-649588A2677F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{4D17507C-6002-49C6-976C-649588A2677F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{4D17507C-6002-49C6-976C-649588A2677F}.Release|x86.ActiveCfg = Release|Any CPU
+		{C92ECA3F-1083-4509-B4B7-ED9B3C5B5F3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92ECA3F-1083-4509-B4B7-ED9B3C5B5F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92ECA3F-1083-4509-B4B7-ED9B3C5B5F3C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C92ECA3F-1083-4509-B4B7-ED9B3C5B5F3C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C92ECA3F-1083-4509-B4B7-ED9B3C5B5F3C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C92ECA3F-1083-4509-B4B7-ED9B3C5B5F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92ECA3F-1083-4509-B4B7-ED9B3C5B5F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92ECA3F-1083-4509-B4B7-ED9B3C5B5F3C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C92ECA3F-1083-4509-B4B7-ED9B3C5B5F3C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C92ECA3F-1083-4509-B4B7-ED9B3C5B5F3C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

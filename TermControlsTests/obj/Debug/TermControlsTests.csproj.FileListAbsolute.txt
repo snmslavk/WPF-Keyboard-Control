@@ -1,0 +1,9 @@
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\TermControlsTests\bin\Debug\TermControlsTests.dll
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\TermControlsTests\bin\Debug\TermControlsTests.pdb
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\TermControlsTests\bin\Debug\nunit.framework.dll
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\TermControlsTests\bin\Debug\TermControls.dll
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\TermControlsTests\bin\Debug\TermControls.pdb
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\TermControlsTests\bin\Debug\nunit.framework.xml
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\TermControlsTests\obj\Debug\TermControlsTests.csprojResolveAssemblyReference.cache
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\TermControlsTests\obj\Debug\TermControlsTests.dll
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\TermControlsTests\obj\Debug\TermControlsTests.pdb
