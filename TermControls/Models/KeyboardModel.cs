@@ -1,16 +1,14 @@
-﻿using System.Collections.Generic;
-using System.Windows;
-using System.Windows.Controls;
+﻿using System;
+using System.ComponentModel;
+using System.Collections.ObjectModel;
 
 namespace TermControls.Models
 {
     /// <summary>
     /// 
     /// </summary>
-    public class KeyboardModel : BaseModel
+    public class KeyboardModel : INotifyPropertyChanged
     {
-        public Dictionary<string, ButtonModel> DictButtons = new Dictionary<string, ButtonModel>();
-
         protected string[] Content1 { get; set; }
         protected string[] Content1Shift { get; set; }
         protected string[] Content2 { get; set; }
@@ -34,34 +32,116 @@ namespace TermControls.Models
             }
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="_BtnTemplate"></param>
-        /// <param name="_onScreenKeyboard_Click"></param>
-        public KeyboardModel(ControlTemplate _BtnTemplate, RoutedEventHandler _onScreenKeyboard_Click)
+        string GetButtonContent(string btnName)
+        {
+            int raw = Convert.ToInt32(btnName[1].ToString()) - 1;
+            int col = btnName.Length == 3 ? Convert.ToInt32(btnName[2].ToString()) - 1 : Convert.ToInt32(btnName[2].ToString() + btnName[3].ToString()) - 1;
+            return Content[raw][col].ToString();
+        }
+
+
+
+        private ObservableCollection<ButtonModel> buttonsRaw1;
+
+        public ObservableCollection<ButtonModel> ButtonsRaw1
+        {
+            get
+            {
+                return buttonsRaw1;
+            }
+        }
+
+        private ObservableCollection<ButtonModel> buttonsRaw2;
+
+        public ObservableCollection<ButtonModel> ButtonsRaw2
+        {
+            get
+            {
+                return buttonsRaw2;
+            }
+        }
+
+        private ObservableCollection<ButtonModel> buttonsRaw3;
+
+        public ObservableCollection<ButtonModel> ButtonsRaw3
+        {
+            get
+            {
+                return buttonsRaw3;
+            }
+        }
+
+        private ObservableCollection<ButtonModel> buttonsRaw4;
+
+        public ObservableCollection<ButtonModel> ButtonsRaw4
+        {
+            get
+            {
+                return buttonsRaw4;
+            }
+        }
+
+        ObservableCollection<ButtonModel> CreateButtons(int _raw)
+        {
+            var _buttons = new ObservableCollection<ButtonModel>();
+            for (int j = 1; j <= Content[_raw].Length; j++)
+            {
+                string _name = String.Format("b{0}{1}", _raw + 1, j);
+                _buttons.Add(new ButtonModel() { Name = _name, Column = j - 1, Content = GetButtonContent(_name) });
+            }
+            return _buttons;
+        }
+
+        void ChangeButtonsContent(ObservableCollection<ButtonModel> _buttons, int _raw)
+        {
+            for (int j = 1; j <= Content[_raw].Length; j++)
+                _buttons[j-1].Content = GetButtonContent(_buttons[j-1].Name);
+        }
+
+        public void ChangeButtonsContent()
+        {
+            ChangeButtonsContent(buttonsRaw1, 0);
+            ChangeButtonsContent(buttonsRaw2, 1);
+            ChangeButtonsContent(buttonsRaw3, 2);
+            ChangeButtonsContent(buttonsRaw4, 3);
+        }
+
+        public void CreateButtons()
+        {
+            buttonsRaw1 = CreateButtons(0);
+            buttonsRaw2 = CreateButtons(1);
+            buttonsRaw3 = CreateButtons(2);
+            buttonsRaw4 = CreateButtons(3);
+        }
+
+        public KeyboardModel()
         {
             isShift = false;
             isEngRus = false;
-            FontSize = 20;
-            Template = _BtnTemplate;
-            _OnScreenKeyboard_Click = _onScreenKeyboard_Click;
-            Content1 = Content2 = Content1Shift = Content2Shift = new string[4] { new string('*', 11), new string('*', 12), new string('*', 11), new string('*', 12) };
-            Fill_DictButtons();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        void Fill_DictButtons()
+        private string text;
+        public string Text
         {
-            for (int i = 1; i <= Content.Length; i++)
-                for (int j = 1; j <= Content[i-1].Length; j++)
-                {
-                    ButtonModel _model = new ButtonModel(this) {Name = "b" + i.ToString() + j.ToString(), Column = j - 1};
-                    DictButtons.Add(_model.Name, _model);
-                }
+            get { return text; }
+            set
+            {
+                text = value;
+                OnPropertyChanged("Text");
+            }
         }
+
+        #region INotifyPropertyChanged Members
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        #endregion
 
 
     }

@@ -43,3 +43,17 @@ C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\OnScreenKeyboard\obj\x86\Debug
 C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.g.resources
 C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.Properties.Resources.resources
 C:\Users\днс\Desktop\WPFOnScreenKeyboard\trunk\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.csproj.GenerateResource.Cache
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.exe
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.pdb
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\bin\Debug\OnScreenKeyboard.exe
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\bin\Debug\OnScreenKeyboard.pdb
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\bin\Debug\TermControls.dll
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\bin\Debug\TermControls.pdb
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.csprojResolveAssemblyReference.cache
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\MainWindow.baml
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\MainWindow.g.cs
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\App.g.cs
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard_MarkupCompile.cache
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.g.resources
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.Properties.Resources.resources
+C:\Users\днс\Desktop\WPFOnScreenKeyboard\OnScreenKeyboard\obj\x86\Debug\OnScreenKeyboard.csproj.GenerateResource.Cache

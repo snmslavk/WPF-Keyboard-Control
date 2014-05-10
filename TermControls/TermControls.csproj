@@ -49,14 +49,15 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\DelegateCommand.cs" />
+    <Compile Include="Helpers\GridAutoLayout.cs" />
+    <Compile Include="ViewModels\KeyboardViewModel.cs" />
     <Page Include="OnScreenKeyboard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Compile Include="Helpers\KeyboardHelper.cs" />
     <Compile Include="KeyImageProperty\KeyNotPressed.cs" />
     <Compile Include="KeyImageProperty\KeyPressed.cs" />
-    <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\ButtonModel.cs" />
     <Compile Include="Models\KeyboardModel.cs" />
     <Compile Include="Models\KeyboardModelRuEng.cs" />

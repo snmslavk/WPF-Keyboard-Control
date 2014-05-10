@@ -1,7 +1,7 @@
 ﻿<Window x:Class="OnScreenKeyboard.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="472" Width="996"
+        Title="MainWindow" Height="472" Width="996" x:Name="m" 
         xmlns:TermControls="clr-namespace:TermControls;assembly=TermControls">
     <Grid>
         <Grid.RowDefinitions>
@@ -9,6 +9,6 @@
             <RowDefinition Height="349*" />
         </Grid.RowDefinitions>
         <TextBox Text="{Binding Text, ElementName=onScreenKeyboard}" Name="textBox1" />
-        <TermControls:OnScreenKeyboard x:Name="onScreenKeyboard" Grid.Row="1" />
+        <TermControls:OnScreenKeyboard x:Name="onScreenKeyboard" Command="{Binding ButtonClickCommand,ElementName=m}" Grid.Row="1" />
     </Grid>
 </Window>

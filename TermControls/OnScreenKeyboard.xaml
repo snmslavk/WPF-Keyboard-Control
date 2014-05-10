@@ -4,43 +4,72 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             xmlns:local="clr-namespace:TermControls">
-    <Grid Name="MainGrid">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="70*" /><RowDefinition Height="70*" /><RowDefinition Height="70*" /><RowDefinition Height="70*" /><RowDefinition Height="70*" />
-        </Grid.RowDefinitions>
+             xmlns:local="clr-namespace:TermControls"
+             xmlns:viewmodel="clr-namespace:TermControls.ViewModels"
+             x:Name="usercontrol" >
+    <Grid Name="MainGrid" local:GridAutoLayout.NumberOfRows="5">
+        <Grid.DataContext>
+            <viewmodel:KeyboardViewModel />
+        </Grid.DataContext>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" />
+                <ColumnDefinition Width="770*" />
                 <ColumnDefinition Width="160*" />
             </Grid.ColumnDefinitions>
-            <Button local:KeyPressed.Image="{DynamicResource ResourceKey=gdelete}" local:KeyNotPressed.Image="{DynamicResource ResourceKey=delete}" Template="{DynamicResource ResourceKey=KeyboardButton}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="btnDel" Grid.Column="11" Click="btnDel_Click" />
+            <ItemsControl ItemsSource="{Binding Model.ButtonsRaw1}" x:Name="ListView1" ItemTemplate="{DynamicResource ResourceKey=itemContDataTemplate}" ItemContainerStyle="{DynamicResource ResourceKey=itemContStyle}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Grid local:GridAutoLayout.NumberOfColumns="{Binding Model.ButtonsRaw1.Count}" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+            <Button local:KeyPressed.Image="{DynamicResource ResourceKey=gdelete}" local:KeyNotPressed.Image="{DynamicResource ResourceKey=delete}" Template="{DynamicResource ResourceKey=KeyboardButton}" Name="btnDel" Grid.Column="1" Command="{Binding DataContext.DeleteCommand,ElementName=MainGrid}" />
         </Grid>
+        
         <Grid Margin="30,0,0,0" Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" /><ColumnDefinition Width="70*" />
-            </Grid.ColumnDefinitions>
+            <ItemsControl ItemsSource="{Binding Model.ButtonsRaw2}" x:Name="ListView2" ItemTemplate="{DynamicResource ResourceKey=itemContDataTemplate}" ItemContainerStyle="{DynamicResource ResourceKey=itemContStyle}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Grid local:GridAutoLayout.NumberOfColumns="{Binding Model.ButtonsRaw2.Count}" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
         </Grid>
         <Grid Margin="43,0,0,0" Grid.Row="2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="115*" />
+                <ColumnDefinition Width="792*" />
+                <ColumnDefinition Width="115*" />
             </Grid.ColumnDefinitions>
-            <Button local:KeyPressed.Image="{DynamicResource ResourceKey=genter}" local:KeyNotPressed.Image="{DynamicResource ResourceKey=enter}" Template="{DynamicResource ResourceKey=KeyboardButton}" Name="btnEnter" Grid.Column="11" Click="btnEnter_Click" />
+            <ItemsControl ItemsSource="{Binding Model.ButtonsRaw3}" x:Name="ListView3" ItemTemplate="{DynamicResource ResourceKey=itemContDataTemplate}" ItemContainerStyle="{DynamicResource ResourceKey=itemContStyle}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Grid local:GridAutoLayout.NumberOfColumns="{Binding Model.ButtonsRaw3.Count}" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+            <Button local:KeyPressed.Image="{DynamicResource ResourceKey=genter}" local:KeyNotPressed.Image="{DynamicResource ResourceKey=enter}" Template="{DynamicResource ResourceKey=KeyboardButton}" Name="btnEnter" Grid.Column="1" Command="{Binding Command,ElementName=usercontrol}"  />
         </Grid>
         <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" /><ColumnDefinition Width="72*" />
+                <ColumnDefinition Width="864*" />
                 <ColumnDefinition Width="85*" />
             </Grid.ColumnDefinitions>
-            <Button local:KeyPressed.Image="{DynamicResource ResourceKey=gshift}" local:KeyNotPressed.Image="{DynamicResource ResourceKey=shift}" Template="{DynamicResource ResourceKey=KeyboardButton}" Name="btnShift" Grid.Column="12" Click="btnShift_Click" />
+            <ItemsControl ItemsSource="{Binding Model.ButtonsRaw4}" x:Name="ListView4" ItemTemplate="{DynamicResource ResourceKey=itemContDataTemplate}" ItemContainerStyle="{DynamicResource ResourceKey=itemContStyle}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Grid local:GridAutoLayout.NumberOfColumns="{Binding Model.ButtonsRaw4.Count}" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+            <Button local:KeyPressed.Image="{DynamicResource ResourceKey=gshift}" local:KeyNotPressed.Image="{DynamicResource ResourceKey=shift}" Template="{DynamicResource ResourceKey=KeyboardButton}" Name="btnShift" Grid.Column="1" Command="{Binding DataContext.ShiftCommand,ElementName=MainGrid}" />
         </Grid>
         <Grid Grid.Row="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="690*" />
                 <ColumnDefinition Width="145*" />
             </Grid.ColumnDefinitions>
-            <Button local:KeyPressed.Image="{DynamicResource ResourceKey=gprobel}" local:KeyNotPressed.Image="{DynamicResource ResourceKey=probel}" Template="{DynamicResource ResourceKey=KeyboardButton}" Name="btnSpace" Content=" " />
-            <Button local:KeyPressed.Image="{DynamicResource ResourceKey=gEngRus}" local:KeyNotPressed.Image="{DynamicResource ResourceKey=EngRus}" Template="{DynamicResource ResourceKey=KeyboardButton}" Name="btnChangeLang" Grid.Column="1" Click="btnChangeLang_Click" />
+            <Button local:KeyPressed.Image="{DynamicResource ResourceKey=gprobel}" local:KeyNotPressed.Image="{DynamicResource ResourceKey=probel}" Template="{DynamicResource ResourceKey=KeyboardButton}" Name="btnSpace" Command="{Binding DataContext.SpaceCommand,ElementName=MainGrid}" />
+            <Button local:KeyPressed.Image="{DynamicResource ResourceKey=gEngRus}" local:KeyNotPressed.Image="{DynamicResource ResourceKey=EngRus}" Template="{DynamicResource ResourceKey=KeyboardButton}" Name="btnChangeLang" Grid.Column="1" Command="{Binding DataContext.ChangeLangCommand,ElementName=MainGrid}" />
         </Grid>
         <Grid.Resources>
             <ResourceDictionary>
@@ -58,14 +87,21 @@
                 <ImageSource x:Key="shift">/TermControls;component/Images/shift.png</ImageSource>
                 <ImageSource x:Key="gshift">/TermControls;component/Images/g-shift.png</ImageSource>
 
-                <!-- Buttons templates -->
                 <ControlTemplate x:Key="SimpleBtn" TargetType="Button">
-                    <Button local:KeyPressed.Image="{DynamicResource ResourceKey=gbutton70x70}" local:KeyNotPressed.Image="{DynamicResource ResourceKey=button70x70}" Template="{DynamicResource ResourceKey=KeyboardButton}" Name="b311" Content="{TemplateBinding Content}" Command="{Binding OnClick}" FontSize="{TemplateBinding FontSize}" FontWeight="Normal"  Grid.Column="10" />
+                    <Button CommandParameter="{Binding Content}" Command="{Binding Path=DataContext.ButtonClickCommand,ElementName=MainGrid}" local:KeyPressed.Image="{DynamicResource ResourceKey=gbutton70x70}" local:KeyNotPressed.Image="{DynamicResource ResourceKey=button70x70}" Template="{DynamicResource ResourceKey=KeyboardButton}" Content="{TemplateBinding Content}"  FontSize="{TemplateBinding FontSize}" FontWeight="Normal"   />
                 </ControlTemplate>
+
+                <Style TargetType="{x:Type FrameworkElement}"  x:Key="itemContStyle">
+                    <Setter Property="Grid.Column" Value="{Binding Column}"/>
+                </Style>
+
+                <DataTemplate x:Key="itemContDataTemplate">
+                    <Button Template="{DynamicResource ResourceKey=SimpleBtn}"  FontSize="20" Content="{Binding Content}"     />
+                </DataTemplate>
 
                 <ControlTemplate x:Key="KeyboardButton" TargetType="Button">
                     <Grid>
-                        <Image VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  Name="imgSource" Source="{Binding Path=(local:KeyNotPressed.Image),
+                        <Image   Name="imgSource" Source="{Binding Path=(local:KeyNotPressed.Image),
                      RelativeSource={RelativeSource FindAncestor,
                        AncestorType={x:Type Button}}}" >
                         </Image>
@@ -80,12 +116,14 @@
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
-
+                
             </ResourceDictionary>
-
         </Grid.Resources>
     </Grid>
     
     <UserControl.Resources>
+        <Style TargetType="local:OnScreenKeyboard">
+            <Setter Property="Text" Value="{Binding Path=DataContext.Model.Text, Mode=TwoWay,ElementName=MainGrid}"/>
+        </Style>
     </UserControl.Resources>
 </UserControl>

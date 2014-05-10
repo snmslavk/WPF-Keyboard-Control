@@ -1,4 +1,6 @@
 ﻿using System.Windows;
+using TermControls.Commands;
+using System.Windows.Input;
 
 namespace OnScreenKeyboard
 {
@@ -10,12 +12,18 @@ namespace OnScreenKeyboard
         public MainWindow()
         {
             InitializeComponent();
-            onScreenKeyboard.Enter_Click += new RoutedEventHandler(onScreenKeyboard_Enter_Click);
+
         }
 
-        void onScreenKeyboard_Enter_Click(object sender, RoutedEventArgs e)
+        public ICommand ButtonClickCommand
         {
-            MessageBox.Show("EnterClick!");
+            get { return new DelegateCommand(ButtonClick); }
+        }
+
+
+        private void ButtonClick(object param)
+        {
+            System.Windows.MessageBox.Show("EnterClick!");
         }
     }
 }

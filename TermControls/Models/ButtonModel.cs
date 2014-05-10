@@ -1,20 +1,46 @@
-﻿using System.Windows;
-using System.Windows.Controls;
+﻿using System.ComponentModel;
 
 namespace TermControls.Models
 {
     /// <summary>
     /// 
     /// </summary>
-    public class ButtonModel : BaseModel
+    public class ButtonModel :  INotifyPropertyChanged
     {
-        public ButtonModel(BaseModel _model)
+        public ButtonModel()
         {
-            FontSize = _model.FontSize;
-            Template = _model.Template;
-            _OnScreenKeyboard_Click = _model._OnScreenKeyboard_Click;
+
         }
+
+        private string content;
+        public string Content
+        {
+            get { return content; }
+            set
+            {
+                content = value;
+                OnPropertyChanged("Content");
+            }
+        }
+
         public string Name { get; set; }
         public int Column { get; set; }
+
+        #region INotifyPropertyChanged Members
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        #endregion
+
+
     }
+
+    
+    
 }
