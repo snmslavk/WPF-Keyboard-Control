@@ -5,7 +5,7 @@ using TermControls.Models;
 
 namespace TermControls.ViewModels
 {
-    internal class KeyboardViewModel
+    public class KeyboardViewModel
     {
         public KeyboardViewModel()
         {
@@ -21,7 +21,7 @@ namespace TermControls.ViewModels
         }
 
 
-        private void ChangeLangClick(object param)
+        public void ChangeLangClick(object param)
         {
             Model.isEngRus = !Model.isEngRus;
             Model.ChangeButtonsContent();
@@ -33,7 +33,7 @@ namespace TermControls.ViewModels
         }
 
 
-        private void ShiftClick(object param)
+        public void ShiftClick(object param)
         {
             Model.isShift = !Model.isShift;
             Model.ChangeButtonsContent();
@@ -45,7 +45,7 @@ namespace TermControls.ViewModels
         }
 
 
-        private void DeleteClick(object param)
+        public void DeleteClick(object param)
         {
             if (!String.IsNullOrEmpty(Model.Text))
                 Model.Text = Model.Text.Remove(Model.Text.Length - 1);
@@ -57,7 +57,7 @@ namespace TermControls.ViewModels
         }
 
 
-        private void ButtonClick(object param)
+        public void ButtonClick(object param)
         {
             Model.Text += param.ToString();
         }
@@ -68,7 +68,7 @@ namespace TermControls.ViewModels
         }
 
 
-        private void SpaceClick(object param)
+        public void SpaceClick(object param)
         {
             Model.Text += " ";
         }
