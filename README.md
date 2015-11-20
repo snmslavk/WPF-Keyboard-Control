@@ -1,6 +1,7 @@
 # WPF on screen keyboard control
 
 This is a component for WPF applications
+I works under .Net Framework 4
 
 # How to use
 ## Getting started
