@@ -3,6 +3,7 @@
 This is a component for WPF applications
 
 # How to use
+## Getting started
 Add namespace to your xaml application
 
       xmlns:TermControls="clr-namespace:TermControls;assembly=TermControls"
@@ -10,14 +11,15 @@ Add namespace to your xaml application
  Then use it like
  
       <TermControls:OnScreenKeyboard />
-      
+
+## Binding      
 Also you can bind textbox or others component to this control via standard binding
 
       <TextBox Text="{Binding Text, ElementName=onScreenKeyboard}" Name="textBox1" />
 
-How to use handle EnterKeyPress
+## How to use handle EnterKeyPress
 
-      <TermControls:OnScreenKeyboard x:Name="onScreenKeyboard" Command="{Binding ButtonClickCommand,ElementName=m}" Grid.Row="1" />
+      <TermControls:OnScreenKeyboard x:Name="onScreenKeyboard" Command="{Binding ButtonClickCommand,ElementName=m}" />
       
 where `m` is name of MainWindow
 
