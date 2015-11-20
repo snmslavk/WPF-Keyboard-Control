@@ -1,4 +1,4 @@
-# WPFOnScreenKeyboard 
+# WPF on screen keyboard control
 
 This is a component for WPF applications
 
