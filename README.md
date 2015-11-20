@@ -1,4 +1,5 @@
 ## WPF on screen keyboard control
+![WPF Keyboard component](https://i.gyazo.com/7445eaf6a94b12b6c2a26677d6f1d8cb.gif)
 
 This is a component for WPF applications
 
@@ -37,10 +38,6 @@ And now add
         {
             System.Windows.MessageBox.Show("EnterClick!");
         }
-
-
-### How it looks like
-![WPF Keyboard component](https://i.gyazo.com/3af2f77ebf46a8097c7c14bdf4c292ec.png)
 
 
 ### Contact information
