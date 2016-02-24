@@ -42,8 +42,6 @@ And now add
         }
 
 
-### Contact information
 
-contact me via email y_o_z(at)mail.ru
 
 
