@@ -9,6 +9,10 @@ It works under .Net Framework 4
 
 ### How to use
 #### Getting started
+Use nuget console
+
+      PM> Install-Package WPFTouchKeyboard
+
 Add namespace to your xaml application
 
       xmlns:TermControls="clr-namespace:TermControls;assembly=TermControls"
