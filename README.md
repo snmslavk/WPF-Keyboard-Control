@@ -1,4 +1,5 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/py2u4lm82ud0m91q?svg=true)](https://ci.appveyor.com/project/snmslavk/wpf-on-screen-keyboard)
+[![NuGet version](https://badge.fury.io/nu/WPFTouchKeyboard.svg)](https://badge.fury.io/nu/WPFTouchKeyboard)
 
 ## WPF on screen keyboard control
 ![WPF Keyboard component](https://i.gyazo.com/7445eaf6a94b12b6c2a26677d6f1d8cb.gif)
