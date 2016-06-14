@@ -2,7 +2,7 @@
 [![NuGet version](https://badge.fury.io/nu/WPFTouchKeyboard.svg)](https://badge.fury.io/nu/WPFTouchKeyboard)
 
 ## WPF Touch Keyboard Control
-![WPF Keyboard component](https://i.gyazo.com/7445eaf6a94b12b6c2a26677d6f1d8cb.gif)
+![WPF Keyboard component](https://visualstudiogallery.msdn.microsoft.com/d711a67c-ceb7-46ec-a0c7-0db4e2cdea53/image/file/208492/1/68747470733a2f2f692e6779617a6f2e636f6d2f37343435656166366139346231326236633261323636373764366631643863622e676966.gif)
 
 This is a component for WPF applications
 
