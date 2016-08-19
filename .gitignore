@@ -3,3 +3,8 @@
 ################################################################################
 
 /OnScreenKeyboard/bin/Debug
+/OnScreenKeyboard/obj/x86/Debug
+/TermControls/bin/Debug
+/TermControlsTests/obj/Debug
+/TermControlsTests/bin/Debug
+/TermControls/obj/Debug
