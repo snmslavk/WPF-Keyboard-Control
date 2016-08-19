@@ -6,8 +6,6 @@
 
 This is a component for WPF applications
 
-It works under .Net Framework 4
-
 ### How to use
 #### Getting started
 Use nuget console
