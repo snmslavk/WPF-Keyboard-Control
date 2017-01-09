@@ -46,6 +46,8 @@ And now add
         }
 
 
+#### Can I help you?
 
+Of course yes! Any pull-request will be considered.
 
 
