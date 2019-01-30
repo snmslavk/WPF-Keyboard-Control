@@ -49,4 +49,4 @@ And now add
 
 Of course yes! Any pull-request will be considered.
 
-You can take any issue with the label [Up for Grabs](https://github.com/snmslavk/WPF-Keyboard-Control/issues?q=is%3Aissue+is%3Aopen+label%3A%22Up+for+Grabs%22)
+You can take any issue with the label [help wanted](https://github.com/snmslavk/WPF-Keyboard-Control/labels/help%20wanted)
